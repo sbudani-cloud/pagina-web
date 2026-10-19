@@ -134,6 +134,10 @@ h2 {
     top: -60px;
 }
 
+.detallitos:hover, .detallitos2:hover {
+    animation: vibrar 0.3s ease;
+}
+
 .cont-diseno-segundo {
     padding: 5px;   
     background: linear-gradient(to top, #b3b3b3 0%, #e5e5e5 25%, #c7c7c7 75%, #ffffff 100%);
@@ -186,14 +190,16 @@ p {
     right: 0;
 }
 
-@keyframes saltito {
+@keyframes vibrar {
   0%, 100% {
     transform: translateY(0);
   }
   40% {
     transform: translateY(-6px);
+    transform: rotate(1deg);
   }
   70% {
     transform: translateY(-2px);
+    transform: rotate(-1deg);
   }
 }
