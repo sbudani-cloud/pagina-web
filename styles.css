@@ -36,7 +36,7 @@ span {
 rainbow {
     font-weight: bold;
     display: inline-block;
-    background: linear-gradient(to right, #ee5c83, #e6822b, #eed56f, #84f18b, #4059cb, #703992);
+    background: linear-gradient(to right, #f4a3b8, #f0b283, #eedf9c, #a9eaaf, #97a8e7, #ba95d2);
     background-clip: text;
     color: transparent;
 }
@@ -148,8 +148,8 @@ h2 {
 
 .cont-diseno-tercero {
     padding: 5px;   
-    background: linear-gradient(to top, #ffffff 0%, #ffd8e9 25%, #ffd8e9 75%, #ff81b8 100%);
-    border: 2px solid #fd8dbe;
+    background: linear-gradient(to top, #ffffff 0%, #ffd8e9 15%, #ffd8e9 60%, #ff8fc0 100%);
+    border: 2px solid #fc99c4;
     border-radius: 0 0 10px 10px;
 }
 
