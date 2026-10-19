@@ -162,3 +162,7 @@ a::first-letter {
 a:hover {
     color: #f7abcc;
 }
+
+p {
+    font-size: clamp(14px, 2vw, 17px);
+}
