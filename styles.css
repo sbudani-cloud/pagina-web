@@ -134,7 +134,7 @@ h2 {
     top: -60px;
 }
 
-.detallitos:hover, .detallitos2:hover {
+.detallitos.vibrando, .detallitos2.vibrando {
     animation: vibrar 0.3s ease;
 }
 
