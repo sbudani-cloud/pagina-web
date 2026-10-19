@@ -41,6 +41,7 @@
                 </div>
                 <div class="row gx-1 mt-1 position-relative">
                     <img src="assets/corazon.png" class="detallitos" alt="Dazai en un Corazón" />
+                    
                     <div class="col-3 col-lg-2">
                         <div class="cont-diseno-violeta h-100">
                             <picture>
@@ -52,23 +53,25 @@
                     </div>
                     <div class="col-9 col-lg-10">
                         <div class="d-flex flex-column gap-1">
-                        <div class="cont-diseno-rosita">
-                            <h1 class="rosita">PR♡YECTOZZ .𖥔 ݁ ˖ִ📝༄˖°.</h1>
-                        </div>
-                        <div class="probando">
-                            <p>𝓹ara ver los repositorios de github de algunos de <rainbow>mis proyectos</rainbow>, toca los <strong>botoncitos</strong> de abajoop (˶ᵔ ᵕ ᵔ˶)</p>
-                        </div>
-                        <div class="row g-1">
-                            <div class="col-4"><a href="https://github.com/sbudani-cloud/tp_1" target="_blank"><img src="assets/proyecto1.jpg" class="botoncito" alt="Link a Luliify" /></a></div>
-                            <div class="col-4"><a href="https://github.com/DanteRodriguezHola/Tower-Defense" target="_blank"><img src="assets/proyecto2.jpg" class="botoncito" alt="Link a Stray Tower Defense" /></a></div>
-                            <div class="col-4"><a href="https://github.com/sbudani-cloud/web-personal-django" target="_blank"><img src="assets/proyecto3.jpg" class="botoncito" alt="Link a Web Personal con Django" /></a></div>
+                            <div class="cont-diseno-rosita">
+                                <h1 class="rosita">PR♡YECTOZZ .𖥔 ݁ ˖ִ📝༄˖°.</h1>
+                            </div>
+                            <div class="probando">
+                                <p>𝓹ara ver los repositorios de github de algunos de <rainbow>mis proyectos</rainbow>, toca los <strong>botoncitos</strong> de abajoop (˶ᵔ ᵕ ᵔ˶)</p>
+                            </div>
+                            <div class="row g-1">
+                                <div class="col-4"><a href="https://github.com/sbudani-cloud/tp_1" target="_blank"><img src="assets/proyecto1.jpg" class="botoncito" alt="Link a Luliify" /></a></div>
+                                <div class="col-4"><a href="https://github.com/DanteRodriguezHola/Tower-Defense" target="_blank"><img src="assets/proyecto2.jpg" class="botoncito" alt="Link a Stray Tower Defense" /></a></div>
+                                <div class="col-4"><a href="https://github.com/sbudani-cloud/web-personal-django" target="_blank"><img src="assets/proyecto3.jpg" class="botoncito" alt="Link a Web Personal con Django" /></a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row gx-1 align-items-center position-relative">
                     <img src="assets/estrella.png" class="detallitos2" alt="Chuuya en una Estrella" />
                     <div class="col-4 col-lg-3 gy-1">
-                        <img src="assets/mp3player.png" class="v_bannercito" alt="Reproductor de Música" />
+                        <img src="assets/mp3player.png" id="reproductor" class="v_bannercito" alt="Reproductor de Música" />
+                        <audio id="musica" src="assets/cancion.mp3" loop></audio>
                     </div>
                     <div class="col-8 col-lg-9 gy-1">
                         <div class="probando">
@@ -76,7 +79,7 @@
                                 <h1>再生 NOW PLAYING...</h1>
                             </div>
                             <div class="d-flex align-items-center gap-2 justify-content-between">
-                                <p><strong>IF I LEAVE</strong> <rainbow>˖ ݁♬⋆</rainbow> MITSKI</p>
+                                <p><strong>MESMERIZER</strong> <rainbow>˖ ݁♬⋆</rainbow> 32KI</p>
                                 <img src="assets/musica.gif" class="musica-gif" alt="GIF Notas Musicales" />
                             </div>
                         </div>
@@ -99,6 +102,20 @@
             </div>
         </div>
 
+        <script>
+            const musica = document.getElementById('musica');
+            const reproductor = document.getElementById('reproductor');
+
+            reproductor.addEventListener('click', () => {
+                if (musica.paused) {
+                    musica.play();
+                } else {
+                    musica.pause();
+                }
+
+                reproductor.src = musica.paused ? 'assets/mp3player.png' : 'assets/mp3player_on.png';
+            });
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>

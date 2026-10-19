@@ -203,3 +203,7 @@ p {
     transform: rotate(-1deg);
   }
 }
+
+#reproductor {
+      cursor: pointer;
+  }
