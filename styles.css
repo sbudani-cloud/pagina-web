@@ -205,5 +205,29 @@ p {
 }
 
 #reproductor {
-      cursor: pointer;
+    cursor: pointer;
   }
+
+.carousel-item {
+    height: clamp(200px, 30vw, 800px);
+    background-image: url("assets/bg_carrousel.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #f890bd;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+ul {
+  list-style-type: "𓍢ִ໋🍨  ";
+}
