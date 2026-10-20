@@ -231,3 +231,11 @@ p {
 ul {
   list-style-type: "𓍢ִ໋🍨  ";
 }
+
+li {
+    font-size: clamp(14px, 2vw, 17px);
+}
+
+.foto-perfilcito {
+    height: clamp(150px, 14vw, 300px);
+}
